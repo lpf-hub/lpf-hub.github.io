@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前言 ​         一个不懂程序的程序猿，个人博客开张了。参考大佬们的搭建经验，此处也做出个人总结，作为开张的第一步。 ​        本博客采用的是Github Page + Hexo搭建的，通过Hexo生成个人博客的静态网页，然后托管至GitHub服务器，通过GitHub提供的访问域名便可以实现屌丝版的个人博客。下面，就跟着我一起开始屌丝版博客的搭建。 准备 ​        基于Gi">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;20&#x2F;%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;..%5Cimages%5CGitHub%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
-<meta property="og:image" content="c:%5CUsers%5CPengfei%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1571556477121.png">
-<meta property="og:image" content="c:%5CUsers%5CPengfei%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1571556020902.png">
-<meta property="og:updated_time" content="2019-10-20T08:00:03.676Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;006bE6aYly1g84r886l5tj30l50ic3zn.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;006bE6aYly1g84r8yeplgj30jy039mx5.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;006bE6aYly1g84racmf1hj30sj0g23zj.jpg">
+<meta property="og:updated_time" content="2019-10-20T08:41:54.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;20&#x2F;%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;..%5Cimages%5CGitHub%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;006bE6aYly1g84r886l5tj30l50ic3zn.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -99,7 +99,7 @@
 <p>​       Hexo是一款基于node.js驱动的博客框架，自然离不开node的支持。</p>
 <ul>
 <li><p>git环境</p>
-<p>  git是一个分布式版本控制系统，可以实现对我们博客版本的控制。此处，由于我们使用的是windows版本的git，推荐使用国内的源进行下载：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a></p>
+<p>  git是一个分布式版本控制系统，可以实现对我们博客版本的控制。此处，由于我们使用的是windows版本的git，推荐使用国内的源进行下载：<code>https://github.com/waylau/git-for-win</code></p>
 </li>
 <li><p>验证</p>
 <p>  完成node和git的环境变量配置后</p>
@@ -126,10 +126,10 @@
 <li><p>GitHub账号的注册；</p>
 <p> 创建账户；</p>
 <p> 点击Start Project或者下面的new repository创建一个新的仓库；</p>
-<p> <img src="..%5Cimages%5CGitHub%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="GitHub创建仓库"></p>
+<p> <img src="http://ww1.sinaimg.cn/large/006bE6aYly1g84r886l5tj30l50ic3zn.jpg" alt="GitHub创建仓库.png"></p>
 <p> 然后打开仓库新建一个index.html文件，随意写点内容，例如：Hello World</p>
 <p> 然后打开<code>http://lpf-hub.github.io</code>，就可以看到站点index.html的页面内容。</p>
-<p> <img src="C:%5CUsers%5CPengfei%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1571556477121.png" alt="1571556477121"></p>
+<p> <img src="http://ww1.sinaimg.cn/large/006bE6aYly1g84r8yeplgj30jy039mx5.jpg" alt="index-html页面.png"></p>
 </li>
 <li><p>本地配置GitHub账户</p>
 <p> 要使用git工具，首先需要配置SSH key，为部署本地博客到GitHub做准备。</p>
@@ -139,7 +139,7 @@
  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "上面邮箱地址"</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在GitHub上添加生成的SSH key</p>
-<p> <img src="C:%5CUsers%5CPengfei%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1571556020902.png" alt="1571556020902"></p>
+<p> <img src="http://ww1.sinaimg.cn/large/006bE6aYly1g84racmf1hj30sj0g23zj.jpg" alt="创建SSH_key.png"></p>
 </li>
 </ol>
 <p>然后，需要将本地博客与GitHub关联起来：</p>
@@ -174,11 +174,24 @@
 </ul>
 </li>
 </ul>
+<h3 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h3><hr>
+<ul>
+<li><p>部署前，最好先执行<code>hexo clean</code>，清理缓存文件(db.json)和已生成的静态文件(public)。</p>
+</li>
+<li><p>生成草稿的方法：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft "文章标题"</span><br><span class="line"><span class="meta">#</span><span class="bash">生成草稿后，可以在/<span class="built_in">source</span>/_drafts里看到草稿文件</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发布草稿</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="静态图床"><a href="#静态图床" class="headerlink" title="静态图床"></a>静态图床</h3><hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/20/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ck1ypbp5f0002n8un5xpgab32" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/20/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ck1yqwl24000124un1uwqfgrp" class="article-share-link">Share</a>
       
       
     </footer>
